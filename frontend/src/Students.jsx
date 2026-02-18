@@ -160,7 +160,7 @@ const deleteStudent = async (id) => {
               <td>
                 {s.photo && (
                   <img
-                    src={`http://127.0.0.1:8000${s.photo}`}
+                    src={`https://restapi1-vw8t.onrender.com/api/${s.photo}`}
                     alt="student"
                     width="80"
                   />
