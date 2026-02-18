@@ -8,6 +8,7 @@ function Students() {
   const [email, setEmail] = useState("");
   const [age, setAge] = useState("");
   const [photo, setPhoto] = useState(null);
+   const BACKEND = "https://restapi1-vw8t.onrender.com";
 
 
 
@@ -159,11 +160,14 @@ const deleteStudent = async (id) => {
             <tr key={s.id}>
               <td>
                 {s.photo && (
-                  <img
-                    src={`https://restapi1-vw8t.onrender.com/api/${s.photo}`}
-                    alt="student"
-                    width="80"
-                  />
+                 
+
+<img
+  src={`${BACKEND}${s.photo}`}
+  alt="student"
+  width="80"
+/>
+
                 )}
               </td>
 
