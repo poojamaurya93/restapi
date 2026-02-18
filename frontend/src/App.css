@@ -1,0 +1,147 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Page layout */
+.students-container {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.students-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form section */
+.form-section {
+  background: #f9fafc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-section input:focus {
+  border-color: #4cafef;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  margin: 6px 4px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn.add {
+  background: #4caf50;
+  color: white;
+}
+
+.btn.update {
+  background: #2196f3;
+  color: white;
+}
+
+.btn.edit {
+  background: #ffc107;
+}
+
+.btn.delete {
+  background: #f44336;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Table section */
+.table-section {
+  overflow-x: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #4cafef;
+  color: white;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+/* Image */
+td img {
+  border-radius: 8px;
+  object-fit: cover;
+}
