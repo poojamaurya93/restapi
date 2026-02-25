@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+o3!mte2b^u_j8k4jjeym(4opvhj07(2&k+*h)@b+wj^uj15c='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "True"
+
 
 
 ALLOWED_HOSTS = ['*']
@@ -95,7 +95,9 @@ if DEBUG:
 else:
     # PostgreSQL
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("postgresql://student_data_b2pw_user:pnmdcIa4f0Ryuqzg8ErCiMotbU8QS7YZ@dpg-d6fg5krh46gs73ecvkt0-a/student_data_b2pw"))
+        'default': dj_database_url.parse(
+        os.environ.get("DATABASE_URL")
+    )
     }
 
 # Password validation
